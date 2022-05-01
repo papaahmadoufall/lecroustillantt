@@ -1,0 +1,130 @@
+@import "../components/App";
+.container-card {
+  margin:5vh auto auto auto ;
+  display: flex;
+  flex-flow: column  ;
+  justify-content: center;
+  width: 90vw;
+  align-content: center;
+  .card-product{
+    position: relative;
+
+    height: 70vh;
+    display: flex;
+    width: 100%;
+    margin: auto;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: $third-color;
+    .img {
+      margin-top:-2vh ;
+      img{
+      width: 75vw !important;
+      padding: 0;
+    }
+    }
+.name{
+  margin-top: -05vh;
+  display: flex;
+  flex-direction: column;
+
+    #name{
+  font-family:$font-name ;
+  font-size: 2.5em;
+  color: $primary-color;
+  &+div{
+      padding-top: 2vw;
+      font-weight: bold;
+      font-size:1.3em ;
+    }
+}
+  }
+  }
+  div.montant {
+    font-size: 1em;
+    font-weight: bold;
+    p{
+      font-family: $font-principal;
+    }
+  }
+  .btn-command{
+    margin-bottom: 08vh;
+    ;
+   &> button{
+    width: 40vw;
+     height: 5vh;
+     border-radius: 20px;
+    font-size: 1em;
+     font-weight: bold;
+     border: none;
+     color: white;
+     background-color: $primary-color;
+   }
+
+  }
+  div.counter{
+
+    input{
+      border-radius: 5px;
+      height: 5vh;
+      border: none;
+    }
+  }
+  div.back{
+    position: absolute;
+    top: 2vh;
+    left: 2vh;
+    width: 100%;
+    float: left;
+  img#back{
+    width: 32px !important;
+  }
+  }
+  span {cursor:pointer; }
+  .number{
+    display: flex;
+    flex-direction:row ;
+  }
+  .minus, .plus{
+    width:20px;
+    height:20px;
+    background:#f2f2f2;
+    border-radius:4px;
+    padding:8px 5px 8px 5px;
+    border:1px solid #ddd;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+  }
+  input{
+    height:34px;
+    width: 100px;
+    text-align: center;
+    font-size: 26px;
+    border:1px solid #ddd;
+    border-radius:4px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  div.otherFood{
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    div.title{
+      display: block;
+      width: 100%;
+      margin-bottom: 3vh;
+      h1{
+        font-family: $font-principal;
+        font-weight: bold;
+        font-size: 1.2em;
+      }
+    }
+  }
+  }
+

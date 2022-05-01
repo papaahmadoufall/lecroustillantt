@@ -1,0 +1,81 @@
+@import "config";
+$animation-time:7ms;
+.card{
+  animation: fadeIn $animation-time;
+  -webkit-animation: fadeIn $animation-time;
+  -moz-animation: fadeIn $animation-time;
+  -o-animation: fadeIn $animation-time;
+  -ms-animation: fadeIn $animation-time;
+  border-radius: 20px;
+  width: 30vw;
+  //display: flex;
+  //flex-direction: column;
+  //justify-content: center;
+  //justify-items: center;
+
+  background-color: #EEEEEE;
+  padding: 20px;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  page-break-inside: avoid;
+  break-inside: avoid;
+  margin: 0 0 6vw 0;
+  text-align: center;
+  align-items: end;
+  justify-content: center;
+  justify-items: center;
+   div.name{
+  font-family: $font-name;
+    font-size: 1.7em;
+     font-weight: 400;
+    transform: translateY(-10px);
+     color: $primary-color;
+  }
+
+  div.price{
+    font-family: $font-secondary;
+    color: black;
+    font-weight: bold;
+  }
+  div.img{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    img{
+      width:100%;
+      grid-row: 1 / -1;
+      grid-column: 1;
+    }
+  }
+}
+.small{
+  min-height: 10vh;
+}
+.big{
+  min-height: 15vh;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}

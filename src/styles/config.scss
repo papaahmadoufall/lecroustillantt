@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+$primary-color: rgb(251, 0, 80);
+$second-color:#FCFD01;
+$third-color:#EEEEEE;
+$active:#37A73B;
+$fourth-color:#F5F5F5;
+$font-name : 'Anton';
+$font-secondary: 'Noto Sans';
+$font-principal: 'Poppins';
+
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0,40px,0)
+  }
+
+  to {
+    transform: translate3d(0,0,0);
+    opacity: 1
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    transform: translate3d(0,40px,0)
+  }
+
+  to {
+    transform: translate3d(0,0,0);
+    opacity: 1
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    transform: translate3d(0,40px,0)
+  }
+
+  to {
+    transform: translate3d(0,0,0);
+    opacity: 1
+  }
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+  opacity: 0
+}
+
+.animated {
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+}
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity:0;
+    -webkit-transform: translatey(-10px);
+    -moz-transform: translatey(-10px);
+    -o-transform: translatey(-10px);
+    transform: translatey(-10px);
+  }
+  to {
+    opacity:1;
+    -webkit-transform: translatey(0);
+    -moz-transform: translatey(0);
+    -o-transform: translatey(0);
+    transform: translatey(0);
+  }
+}
+@-moz-keyframes fadeInDown {
+  from {
+    opacity:0;
+    -webkit-transform: translatey(-10px);
+    -moz-transform: translatey(-10px);
+    -o-transform: translatey(-10px);
+    transform: translatey(-10px);
+  }
+  to {
+    opacity:1;
+    -webkit-transform: translatey(0);
+    -moz-transform: translatey(0);
+    -o-transform: translatey(0);
+    transform: translatey(0);
+  }
+}
+@keyframes fadeInDown {
+  from {
+    opacity:0;
+    -webkit-transform: translatey(-10px);
+    -moz-transform: translatey(-10px);
+    -o-transform: translatey(-10px);
+    transform: translatey(-10px);
+  }
+  to {
+    opacity:1;
+    -webkit-transform: translatey(0);
+    -moz-transform: translatey(0);
+    -o-transform: translatey(0);
+    transform: translatey(0);
+  }
+}
+.in-down {
+  -webkit-animation-name: fadeInDown;
+  -moz-animation-name: fadeInDown;
+  -o-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s;
+  -o-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+}

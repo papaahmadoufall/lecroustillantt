@@ -1,0 +1,267 @@
+[
+  {
+    "Category": "salé",
+    "Id": "1",
+    "Name": "Mini Pizza",
+    "IsBestSeller": true,
+    "ImgUrl":"https://res.cloudinary.com/lecroustillant/image/upload/v1650768526/image-le-croustillant%20/minipizza_harajz.png" ,
+    "Price": 150
+  },
+  {
+    "Category": "salé",
+    "Id": "2",
+    "Name": "Nem",
+    "ImgUrl":"https://res.cloudinary.com/lecroustillant/image/upload/v1651253336/pngegg_izpp2h.png",
+    "Price": 150
+  },
+  {
+    "Category": "salé",
+    "Id": "3",
+    "Name": "Beignet crevette",
+    "Price": 150
+  },
+  {
+    "Category": "salé",
+    "Id": "4",
+    "Name": "Mini Fataya viande / poisson",
+    "Price": 50
+  },
+  {
+    "Category": "salé",
+    "Id": "5",
+    "Name": "Sandwich",
+    "IsBestSeller": true,
+    "Price": 700
+  },
+  {
+    "Category": "salé",
+    "Id": "6",
+    "Name": "Brochette de viande",
+    "ImgUrl":"https://res.cloudinary.com/lecroustillant/image/upload/v1650784156/image-le-croustillant%20/brochetteviande.png" ,
+    "Price": 300
+  },
+  {
+    "Category": "salé",
+    "Id": "7",
+    "Name": "Brochette de poulet",
+    "ImgUrl":"https://res.cloudinary.com/lecroustillant/image/upload/v1650774570/image-le-croustillant%20/brochettedepoulet_wrwen0.png" ,
+    "Price": 400
+  },
+  {
+    "Category": "salé",
+    "Id": "8",
+    "ImgUrl":"https://res.cloudinary.com/lecroustillant/image/upload/v1650774571/image-le-croustillant%20/roulerhot-dog_krsmbq.png" ,
+    "Name": "Rouler hot-dog",
+    "Price": 100
+  },
+  {
+    "Category": "salé",
+    "Id": "9",
+    "ImgUrl":"https://res.cloudinary.com/lecroustillant/image/upload/v1650774574/image-le-croustillant%20/hamburger_l8bkld.png" ,
+    "Name": "Hamburger",
+    "IsBestSeller": true,
+    "Price": 1000
+  },
+  {
+    "Category": "salé",
+    "Id": "10",
+    "Name": "Fataya complet",
+    "Price": 500
+  },
+  {
+    "Category": "salé",
+    "Id": "11",
+    "Name": "Fataya simple",
+    "Price": 500,
+    "IsBestSeller": true,
+    "ImgUrl":"https://res.cloudinary.com/lecroustillant/image/upload/v1651131812/image-le-croustillant%20/image_3_joertj.png"
+
+  },
+  {
+    "Category": "salé",
+    "Id": "12",
+    "Name": "Quiche loraine",
+    "ImgUrl":"https://res.cloudinary.com/lecroustillant/image/upload/v1651253336/pngegg_izpp2h.png",
+    "Price": 200
+  },
+  {
+    "Category": "salé",
+    "Id": "13",
+    "ImgUrl":"https://res.cloudinary.com/lecroustillant/image/upload/v1650774571/image-le-croustillant%20/croquettedepoulet_tvtjex.png" ,
+    "Name": "Croquette de poulet",
+    "Price": 1000
+  },
+  {
+    "Category": "Salé",
+    "Id": "14",
+    "Name": "Poulet entier-demi et quart"
+  },
+  {
+    "Category": "sucré",
+    "Id": "15",
+    "ImgUrl":"https://res.cloudinary.com/lecroustillant/image/upload/v1650774568/image-le-croustillant%20/beignetnutella_ft8ibd.png" ,
+    "Name": "Beignet Nutella",
+    "IsBestSeller": true,
+    "Price": 400
+  },
+  {
+    "Category": "sucré",
+    "Id": "16",
+    "ImgUrl":"https://res.cloudinary.com/lecroustillant/image/upload/v1650774568/image-le-croustillant%20/Beignetcr%C3%A8me_r28sdy.png" ,
+    "Name": "Beignet crème",
+    "IsBestSeller": true,
+    "Price": 400
+  },
+  {
+    "Category": "sucré",
+    "Id": "17",
+    "ImgUrl":"https://res.cloudinary.com/lecroustillant/image/upload/v1650774568/image-le-croustillant%20/Beignetfourr%C3%A9aucoco_len26s.png" ,
+    "Name": "Beignet fourré au coco",
+    "IsBestSeller": true,
+    "Price": 50
+  },
+  {
+    "Category": "sucré",
+    "Id": "18",
+    "Name": "Beignet dougoub",
+    "Price": 50
+  },
+  {
+    "Category": "sucré",
+    "Id": "19",
+    "ImgUrl":"https://res.cloudinary.com/lecroustillant/image/upload/v1650774572/image-le-croustillant%20/donut_gci5fq.png" ,
+    "Name": "Donut",
+    "Price": 100
+  },
+  {
+    "Category": "sucré",
+    "Id": "20",
+    "ImgUrl":"https://res.cloudinary.com/lecroustillant/image/upload/v1650774573/image-le-croustillant%20/kisspng-muffin-cupcake-german-chocolate-cake-fruitcake-pra-muffin-5abf1315a74081.3984884615224717016851-min-min_svtg21.png" ,
+    "Name": "Cupcake",
+    "Price": 150
+  },
+  {
+    "Category": "sucré",
+    "Id": "21",
+    "Name": "Gaufre",
+    "ImgUrl":"https://res.cloudinary.com/lecroustillant/image/upload/v1650774574/image-le-croustillant%20/Gaufre_dkhd6g.png" ,
+    "Price": 300
+  },
+  {
+    "Category": "sucré",
+    "Id": "22",
+    "ImgUrl":"https://res.cloudinary.com/lecroustillant/image/upload/v1650774567/image-le-croustillant%20/Madelaine_vg3ieo.png" ,
+    "Name": "Madeleine",
+    "Price": 100
+  },
+  {
+    "Category": "sucré",
+    "Id": "23",
+    "Name": "Thiakry",
+    "IsBestSeller": true,
+    "Price": 400
+  },
+  {
+    "Category": "sucré",
+    "Id": "24",
+    "Name": "Ngalakh",
+    "IsBestSeller": true,
+    "Price": 400
+  },
+  {
+    "Category": "sucré",
+    "Id": "31",
+    "ImgUrl":"" ,
+    "Name": "Barbe a papa",
+    "Price": 200
+  },
+  {
+    "Category": "jus",
+    "Id": "25",
+    "ImgUrl":"" ,
+    "Name": "Bissap rouge",
+    "Price": "1000 / 1500 fcfa"
+  },
+  {
+    "Category": "jus",
+    "Id": "26",
+    "ImgUrl":"" ,
+    "Name": "Gingembre",
+    "Price": "1000 / 1500 fcfa"
+  },
+  {
+    "Category": "jus",
+    "Id": "27",
+    "ImgUrl":"" ,
+    "Name": "Bouille",
+    "Price": "1200/1600 FCFA"
+  },
+  {
+    "Category": "jus",
+    "Id": "28",
+    "ImgUrl":"" ,
+    "Name": "Orange melon",
+    "Price": "1200/1600 FCFA"
+  },
+  {
+    "Category": "jus",
+    "Id": "29",
+    "Name": "Menthe au lait",
+    "Price": "1000/1500 fcfa"
+  },
+  {
+    "Category": "jus",
+    "Id": "30",
+    "ImgUrl":"" ,
+    "Name": "Orange",
+    "Price": "1000/ 1500 fcfa"
+  },
+  {
+    "Category": "boisson",
+    "Id": "32",
+    "Name": "Nescafé Expresso",
+    "Price": 500
+  },
+  {
+    "Category": "boisson",
+    "Id": "33",
+    "Name": "Wass",
+    "Price": 100
+  },
+  {
+    "Category": "boisson",
+    "Id": "34",
+    "Name": "Café au lait",
+    "Price": 200
+  },
+  {
+    "Category": "sur commande",
+    "Id": "35",
+    "Name": "Plateaux salés",
+    "IsBestSeller": true,
+    "Price": 10000
+  },
+  {
+    "Category": "salé",
+    "Id": "36",
+    "Name": "Croquemonsieur",
+    "ImgUrl":"https://res.cloudinary.com/lecroustillant/image/upload/v1651253527/image_4_r6tugz.png",
+    "Price": 1000
+  },
+  {
+    "Category": "sur commande",
+    "Id": "37",
+    "Name": "Méchoui Agneau"
+  },
+  {
+    "Category": "sur commande",
+    "Id": "38",
+    "Name": "Service traiteur"
+  },
+  {
+    "Category": "sur commande",
+    "Id": "39",
+    "Name": "Anniversaire, Mariage, Pause café"
+  }
+
+]

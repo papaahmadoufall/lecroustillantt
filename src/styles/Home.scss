@@ -1,0 +1,83 @@
+@import "config";
+*{
+  font-family: $font-secondary
+}
+
+div.App{
+  width: 100%;
+
+  div.container-body{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+    div.slider{
+      width: 100%;
+    }
+    div.title{
+      display: block;
+      height: auto;
+      margin: 0 10px 3vh;
+      h1{
+        font-family:  $font-principal;
+        font-weight: 600;
+        font-size: 1.2em;
+      }
+    }
+
+    div.container-grid-product{
+      width: 90%;
+      margin: auto;
+      //display: flex;
+      //flex-direction: row;
+      //justify-items: center;
+      //flex-wrap: wrap;
+      //justify-content: space-evenly;
+      //align-items: stretch;
+      column-count: 2;
+      column-gap: 6vw;
+
+    }
+    .button-category-container{
+
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      overflow: auto;
+      white-space: nowrap;
+      &>a{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width:auto ;
+        font-family:  $font-principal ;
+        background: $fourth-color;
+        text-align: center;
+        padding: 7px 10px;
+        border-radius: 40px;
+        margin:0 10px 0 ;
+        align-items: center;
+        &:hover{
+          background: $primary-color;
+          color: white;
+          transition: 200ms ease-in-out ;
+        }
+
+        &>span{
+          padding-right: 10px ;
+          &>img{
+
+            width: 4vh;
+          }
+        }
+
+      }
+      a.Best{
+        background:$active ;
+      }
+      margin-bottom: 20px;
+    }
+
+  }
+}

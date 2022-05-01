@@ -1,0 +1,53 @@
+@import "../styles/config";
+//@media (max-width: 480px) {
+.container-slider{
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+
+
+  .slide{
+    width: 90vw;
+    display: block;
+min-height:30vh ;
+  }
+  img.slideImg {
+    width: 70vw;
+    margin: auto 4vh;
+  }
+    .sliderTitle {
+      font-family: $font-principal !important;
+      h1{
+      text-wrap: avoid;
+      font-family: inherit;
+      color: black;
+      font-size: 1.7em;
+      font-weight: bold;
+
+      }
+      & > p {
+        font-size: 1.3em;
+        color: black;
+
+        span {
+          font-family: $font-principal !important;
+          font-weight: bold;
+
+          color: $primary-color;
+        }
+      }
+    }
+  .tray{
+    margin: auto;
+    transform: translateY(-13vh);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    z-index: 0;
+  }
+}
+//}
+

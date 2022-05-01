@@ -1,0 +1,75 @@
+@import "config";
+//@media (max-width: 480px) {
+  $menu-spaces:10;
+  .header{
+    width: auto;
+    background-color:$primary-color ;
+    height: 50px;
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+   img#close{
+     float: right;
+     margin: 15px;
+   }
+    div#closeBtn{
+      position: relative;
+      width: 32px;
+      height: 2px;
+      background: $primary-color;
+      z-index: 1000;
+      border-radius: 10px;
+      float: right;
+      margin:20px 15px;
+      transform: rotate(-45deg);
+
+      &::before{
+        position: absolute;
+        background: $primary-color;
+        z-index: 1000;
+        width: 32px;
+        height: 2px;
+        content: "";
+        transform: rotate(90deg);
+      }
+    }
+    .logo{
+      max-height: 40px;
+      padding:0 0 0 10px;
+    }
+    .menu-btn{
+      width: 30px;
+      position: absolute;
+      right: 20px;
+        .bar{
+        width: 30px;
+        background: $fourth-color;
+        height: 2.5px;
+        border-radius: 20px;
+        position: relative;
+        &::after,&::before{
+          content: "";
+          width: 30px;
+          background: $fourth-color;
+          height: 2.5px;
+          border-radius: 20px;
+        }
+        &::after{
+          position: absolute;
+          top: 10px;
+        }
+        &::before{
+          position: absolute;
+          top: 20px;
+        }
+      }
+    }
+    svg{
+      fill: #EEEEEE;
+    }
+
+  }
+
+//}

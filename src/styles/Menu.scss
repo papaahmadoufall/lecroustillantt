@@ -1,0 +1,47 @@
+@import "config";
+.menu{
+  font-family:  $font-principal;
+  font-weight: bold;
+  width: 100vw;
+  height:auto;
+  background-color: white;
+  z-index: 90;
+display: flex;
+  flex-direction: column;
+
+  ul{
+    padding-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    min-height: 50vh;
+    align-content: center;
+    justify-content: center;
+    line-height: 60px;
+    li{
+    text-decoration: none;
+    list-style: none;
+    .link{
+      font-family:  $font-principal;
+      text-decoration: none;
+      color:  $primary-color;
+      font-size: 1.5em;
+    }
+    }
+  }
+  div.social-network{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+
+    img{
+      width: 15vw;
+      padding: 0 20px;
+    }
+  }
+}
+.closed{
+  display: none;
+}
