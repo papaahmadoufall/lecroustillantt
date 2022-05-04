@@ -5,8 +5,8 @@ import Header from '../components/Header';
 import ProductItem from "../components/ProductItem";
 import SliderComponent from "../components/SliderComponent";
 import SearchBar from "../components/SearchBar";
-import ProductShowItem from "./ProductShowItem";
-import {Link, useNavigate} from "react-router-dom";
+// import ProductShowItem from "./ProductShowItem";
+// import {Link, useNavigate} from "react-router-dom";
 
 function Home() {
     // const navigate = useNavigate()
@@ -107,9 +107,7 @@ function Home() {
                                     <div key={item.Id} onClick={()=>{
                                     // showProduct('product',item.Id)
                                     }} >
-
-
-                                            <Fade    className={"A"} left    >
+                                            <Fade left    >
                                     <ProductItem item={item}/>
                                     </Fade>
 

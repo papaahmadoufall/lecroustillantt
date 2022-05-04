@@ -56,11 +56,8 @@ const SliderComponent = ({sliderArr}) => {
                         </Fade>
 
                 <div className="tray">
+                    <img src="https://res.cloudinary.com/lecroustillant/image/upload/v1651655551/image-le-croustillant%20/tray_tt0xw9.png"/>
                 </div>
-                {/*<div className="arrow arrow-right">*/}
-                {/*    <img src="https://img.icons8.com/external-dreamstale-lineal-dreamstale/32/000000/external-right-arrows-dreamstale-lineal-dreamstale-3.png"/>*/}
-                {/*</div>*/}
-
 
             <div className="dot-indicator">
 

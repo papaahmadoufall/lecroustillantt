@@ -5,7 +5,7 @@ import ProductItem from "../components/ProductItem";
 import Header from "../components/Header";
 const ProductShowItem = () => {
     const [menuData, setMenuData] = useState([])
-
+    console.log(useLocation().pathname)
     //increase counter
 
         const navigate = useNavigate()
