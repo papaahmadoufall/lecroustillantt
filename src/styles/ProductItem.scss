@@ -24,6 +24,16 @@ $animation-time:7ms;
   align-items: end;
   justify-content: center;
   justify-items: center;
+  &:hover {
+    background-color: $fourth-color;
+    transition: 0.1s ease-in-out;
+    transform: scale(0.99);
+  }
+  &:active{
+    transform: scale(1.05);
+    transition: 0.2s ease-in-out;
+
+  }
    div.name{
   font-family: $font-name;
     font-size: 1.7em;
