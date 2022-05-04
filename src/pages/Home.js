@@ -58,7 +58,7 @@ function Home() {
         {categorName:"boisson",categoryIcon:"https://img.icons8.com/bubbles/50/000000/cafe.png"}
     ]
 
-
+    const [activeCategory, setActiveCategory] = useState('best seller');
 
 
     return (
@@ -85,10 +85,11 @@ function Home() {
                                 return (
                                     <a
                                         key={category.categorName}
-                                        className={category.categorName }
+                                        className={ "button-filter " + (activeCategory === category.categorName ? 'active' : '')}
                                         onClick={(e) => {
                                             setFilterArg(category.categorName)
-                                            e.target.classList.add("active")
+                                            setActiveCategory(category.categorName);
+                                            console.log(e.target.className)
                                         }}>
                                         <span><img src={category.categoryIcon}/></span>{category.categorName} </a>
                                 )

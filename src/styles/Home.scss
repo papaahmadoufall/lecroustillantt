@@ -26,26 +26,22 @@ div.App{
     }
 
     div.container-grid-product{
+    
       width: auto;
-      margin: auto;
-      //display: flex;
-      //flex-direction: row;
-      //justify-items: center;
-      //flex-wrap: wrap;
-      //justify-content: space-evenly;
-      //align-items: stretch;
+      margin: auto auto 100px;
       column-count: 2;
       column-gap: 6vw;
 
     }
     .button-category-container{
-
       display: flex;
       flex-direction: row;
       flex-wrap: nowrap;
       justify-content: flex-start;
       overflow: auto;
       white-space: nowrap;
+      margin:0px 0 20px 0 ;
+      padding: 10px 0;
       &>a{
         display: flex;
         flex-direction: row;
@@ -62,6 +58,13 @@ div.App{
           background: $primary-color;
           color: white;
           transition: 200ms ease-in-out ;
+          transform: translateY(-5px);
+
+          //transform:scale(0.9) ;
+        }
+        &:active{
+          transform: scale(1.1);
+          border-radius: 50px;
         }
 
         &>span{
@@ -76,7 +79,11 @@ div.App{
       a.Best{
         background:$active ;
       }
-      margin-bottom: 20px;
+    }
+    .active{
+      background: $primary-color !important;
+      color: white;
+      transition: 200ms ease-in-out ;
     }
 
   }
