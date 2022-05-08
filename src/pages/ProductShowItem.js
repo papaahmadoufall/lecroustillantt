@@ -98,7 +98,7 @@ const ProductShowItem = () => {
         <div className="otherFood">
             <div className="title">
 
-            <h1>Dans la meme catgorie</h1>
+            <h1>Dans la même catégorie</h1>
 
             </div>
             {

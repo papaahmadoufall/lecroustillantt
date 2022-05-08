@@ -1,6 +1,7 @@
 @import "config";
 //@media (max-width: 480px) {
   $menu-spaces:10;
+
   .header{
     width: auto;
     background-color:$primary-color ;
@@ -14,27 +15,32 @@
      float: right;
      margin: 15px;
    }
-    div#closeBtn{
+    .button{
       position: relative;
-      width: 32px;
-      height: 2px;
-      background: $primary-color;
-      z-index: 1000;
-      border-radius: 10px;
-      float: right;
-      margin:20px 15px;
-      transform: rotate(-45deg);
-
-      &::before{
-        position: absolute;
-        background: $primary-color;
-        z-index: 1000;
+      background-color: #8f8f8f;
+      cursor: pointer;
+      div#closeBtn{
         width: 32px;
         height: 2px;
-        content: "";
-        transform: rotate(90deg);
+        background: $primary-color;
+        z-index: 1000;
+        border-radius: 10px;
+        float: right;
+        margin:20px 15px;
+        transform: rotate(-45deg);
+
+        &::before{
+          position: absolute;
+          background: $primary-color;
+          z-index: 1000;
+          width: 32px;
+          height: 2px;
+          content: "";
+          transform: rotate(90deg);
+        }
       }
     }
+
     .logo{
       max-height: 40px;
       padding:0 0 0 10px;
@@ -43,6 +49,10 @@
       width: 30px;
       position: absolute;
       right: 20px;
+      cursor: pointer;
+      &:active{
+      transform: scale(0.8);
+      }
         .bar{
         width: 30px;
         background: $fourth-color;

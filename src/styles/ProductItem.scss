@@ -1,6 +1,7 @@
 @import "config";
 $animation-time:7ms;
 .card{
+  cursor:pointer;
   animation: fadeIn $animation-time;
   -webkit-animation: fadeIn $animation-time;
   -moz-animation: fadeIn $animation-time;

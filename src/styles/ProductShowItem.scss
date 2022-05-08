@@ -8,7 +8,6 @@
   align-content: center;
   .card-product{
     position: relative;
-
     height: 70vh;
     display: flex;
     width: 100%;
@@ -52,7 +51,8 @@
   }
   .btn-command{
     margin-bottom: 08vh;
-    ;
+
+
    &> button{
     width: 40vw;
      height: 5vh;
@@ -62,6 +62,14 @@
      border: none;
      color: white;
      background-color: $primary-color;
+     &:active{
+       transform: scale(0.9);
+     }
+     &:hover{
+       cursor: pointer;
+mix-blend-mode: darken;
+       transition: background-color ease-in-out 500ms;
+     }
    }
 
   }
@@ -74,13 +82,19 @@
     }
   }
   div.back{
+    cursor: pointer;
     position: absolute;
     top: 2vh;
     left: 2vh;
     width: 100%;
     float: left;
+
   img#back{
     width: 32px !important;
+    &:active{
+      transform: scale(0.9);
+
+    }
   }
   }
   span {cursor:pointer; }

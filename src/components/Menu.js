@@ -7,7 +7,13 @@ import AboutUS from "../pages/AboutUS";
 import {Link} from "react-router-dom";
 import Fade from 'react-reveal/Fade';
 const Menu = () => {
-    const pathRootUrl = [{label:"Acceuil",pathUrl:"#",component:<Home />},{label:"Explorez nos plats",pathUrl:"/",component:<Home />},{label:"",pathUrl:"/productShow/:Id",component:< ProductShowItem/>},{label:"Commandes",pathUrl:"/panier",component:<Cart />},{label:"Contactez-nous",pathUrl:"/about",component:<AboutUS />},]
+    const pathRootUrl = [
+        {label:"Acceuil",pathUrl:"#",component:<Home />},
+        {label:"Explorez nos plats",pathUrl:"/",component:<Home />},
+        {label:"",pathUrl:"/productShow/:Id",component:< ProductShowItem/>},
+        {label:"Commandes",pathUrl:"/panier",component:<Cart />},
+        {label:"Contactez-nous",pathUrl:"/about",component:<AboutUS />}
+    ]
     return (
         <>
 
@@ -16,7 +22,13 @@ const Menu = () => {
             {
                 pathRootUrl
                     .map((path
-                        )=> <Fade  key={path.label} ><li className="nav-list-item"><Link className={'link'} to = {path.pathUrl}> {path.label} </Link> </li> </Fade>
+                        )=> <Fade  key={path.label} >
+                        <li className="nav-list-item">
+                            <Link
+                                className={'link'}
+                                to = {path.pathUrl}> {path.label} </Link>
+                        </li>
+                    </Fade>
                     )
             }
             </ul>

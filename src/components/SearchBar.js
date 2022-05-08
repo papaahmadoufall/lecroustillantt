@@ -37,7 +37,7 @@ const SearchBar = (props) => {
         <div>
             <div  className={"search-input "} >
                 <input placeholder={"Recherchez un plat "} value={inputValue} onChange={filter } type="text" />
-                <button class="searchBtn">
+                <button className="searchBtn">
                     <img src="https://img.icons8.com/ios-glyphs/90/fa314a/search--v1.png"/>                </button>
 
             </div>
