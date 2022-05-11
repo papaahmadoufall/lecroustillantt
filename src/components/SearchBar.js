@@ -34,7 +34,7 @@ const SearchBar = (props) => {
         setInputValue(keyword);
     }
     return (
-        <div>
+        <>
             <div  className={"search-input "} >
                 <input placeholder={"Recherchez un plat "} value={inputValue} onChange={filter } type="text" />
                 <button className="searchBtn">
@@ -67,7 +67,7 @@ const SearchBar = (props) => {
 
         </div>
 
-        </div>
+        </>
     );
 };
 

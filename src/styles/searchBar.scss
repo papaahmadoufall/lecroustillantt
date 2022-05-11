@@ -3,10 +3,9 @@ $search-bar-border-color:#D8D8D8;
 $search-bar-bg-color:#F6F6F6;
 $search-bar-border-color-focus: rgba(251, 0, 80, 0.95);
 .search-input{
-
+  display: inline-flex;
   position: relative;
   width: 50vw;
-  margin: 3vh auto ;
   input{
     padding-left: 10px;
     position: relative;
@@ -42,12 +41,12 @@ $search-bar-border-color-focus: rgba(251, 0, 80, 0.95);
   }
 
 }
-.search-result{ transition: ease-in-out;
+.search-result{
+  transition: ease-in-out;
   z-index: 999;
   left: 0;
   right: 0;
-  margin-left: auto;
-  margin-right: auto;
+  top: 21vh;
   position: absolute;
   display: none;
   flex-direction:column;
@@ -77,7 +76,6 @@ $search-bar-border-color-focus: rgba(251, 0, 80, 0.95);
     align-items: center;
     img{
       width: 80%;
-
     }
   }
 }

@@ -1,5 +1,6 @@
 @import "../components/App";
 .container-card {
+
   margin:5vh auto auto auto ;
   display: flex;
   flex-flow: column  ;
@@ -47,6 +48,8 @@
     font-weight: bold;
     p{
       font-family: $font-principal;
+            padding: 10PX 0;
+    text-align: center;
     }
   }
   .btn-command{
@@ -140,5 +143,14 @@ mix-blend-mode: darken;
       }
     }
   }
+
   }
 
+.wrap{
+  margin: 4vh;
+  justify-content: space-evenly;
+  align-items: center;
+  display:flex;
+  flex-direction: row;
+
+}
