@@ -28,9 +28,7 @@ const SearchBar = (props) => {
             setFoundData(results);
         }else {
             setActive("in-down ")
-
         }
-
         setInputValue(keyword);
     }
     return (
@@ -59,9 +57,13 @@ const SearchBar = (props) => {
 
                         ))
                     ) : (
-                        <div className="notFound">
-                        <h1>Desolé! Nous n'avons pas trouvé de correspondance</h1>
-                            <img src="https://res.cloudinary.com/lecroustillant/image/upload/v1651319977/image-le-croustillant%20/icons8-pleurs_znnf2i.gif" alt=""/>
+                        <div className="notFound"
+                        >
+                            <h1>
+                                Desolé! Nous n'avons pas trouvé de correspondance
+                            </h1>
+                            <img
+                                src="https://res.cloudinary.com/lecroustillant/image/upload/v1651319977/image-le-croustillant%20/icons8-pleurs_znnf2i.gif" alt=""/>
                         </div>
                     )}
 

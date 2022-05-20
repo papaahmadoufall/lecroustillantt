@@ -113,10 +113,9 @@ function Home() {
                                     }} >
                                             <Fade left    >
                                     <ProductItem item={item}/>
-                                    </Fade>
 
+                                            </Fade>
                                     </div>
-
 
                                 )
                             }
