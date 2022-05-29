@@ -3,7 +3,9 @@ import '../styles/ProductShowItem.scss'
 import {Link, useLocation,useNavigate} from "react-router-dom";
 import ProductItem from "../components/ProductItem";
 import Header from "../components/Header";
-const ProductShowItem = () => {
+import SearchBar from "../components/SearchBar";
+import CartBtn from "../components/CartBtn";
+const ProductShowItem = ( props, storeCountCart) => {
     const [menuData, setMenuData] = useState([])
     console.log(useLocation().pathname)
     //increase counter
@@ -11,14 +13,23 @@ const ProductShowItem = () => {
         const navigate = useNavigate()
         const [counter, updateCounter] = useState(1);
 
-        function handleIncrement() {
+        const handleIncrement = () => {
 
             updateCounter(counter+ 1);
+        };
+
+        const handleDecrement = () => {
+            updateCounter(counter <= 1 ? 1 : counter - 1);
+        };
+
+    const [cartCount, setCartCount] = useState(0);
+    const handleClick = (e) => {
+          
+        }
+         storeCountCart = (value) => {
+          setCartCount(value)
         }
 
-        function handleDecrement() {
-            updateCounter(counter <= 1 ? 1 : counter - 1);
-        }
 
         useEffect(() => {
             console.log(counter);
@@ -49,6 +60,10 @@ const ProductShowItem = () => {
     return (
 <div>
     <Header/>
+    <div className="wrap">
+        <SearchBar/>
+        <CartBtn data ={cartCount}/>
+    </div>
     { food &&
 
             <div className={"container-card animated animatedFadeInUp fadeInUp"}>
@@ -70,7 +85,13 @@ const ProductShowItem = () => {
 
 
             </div>
+            <form onSubmit={e=> {
+                e.preventDefault();
+                setCartCount(counter);
+                storeCountCart(cartCount);
 
+            }
+            } >
             <div className="number">
                                 <span onClick={() => {
                                     handleDecrement()
@@ -79,7 +100,10 @@ const ProductShowItem = () => {
 
                                 } className="minus">-</span>
                 <input
-                    onChange={(e) => updateCounter(e.target.value==="" ? 1 : parseInt(e.target.value))}
+                    required
+                    onChange={(e) => {
+                        updateCounter(e.target.value === "" ? 1 : parseInt(e.target.value))
+                    }                }
                     id={"number"} type="text" placeholder={"Combien de " + food.Name + " ?"} value={counter}/>
                 <span onClick={() => {
                     handleIncrement()
@@ -92,13 +116,14 @@ const ProductShowItem = () => {
                 <p><span>Montant:</span> {food.Price*counter} fcfa</p>
             </div>
             <div className="btn-command">
-                <button>Commander</button>
+                <button onClick={handleClick} >Commander</button>
             </div>
+            </form>
         </div>
         <div className="otherFood">
             <div className="title">
 
-            <h1>Dans la meme catgorie</h1>
+            <h1>Dans la même catégorie</h1>
 
             </div>
             {

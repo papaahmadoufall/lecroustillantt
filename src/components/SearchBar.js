@@ -28,16 +28,14 @@ const SearchBar = (props) => {
             setFoundData(results);
         }else {
             setActive("in-down ")
-
         }
-
         setInputValue(keyword);
     }
     return (
-        <div>
+        <>
             <div  className={"search-input "} >
                 <input placeholder={"Recherchez un plat "} value={inputValue} onChange={filter } type="text" />
-                <button class="searchBtn">
+                <button className="searchBtn">
                     <img src="https://img.icons8.com/ios-glyphs/90/fa314a/search--v1.png"/>                </button>
 
             </div>
@@ -59,15 +57,19 @@ const SearchBar = (props) => {
 
                         ))
                     ) : (
-                        <div className="notFound">
-                        <h1>Desolé! Nous n'avons pas trouvé de correspondance</h1>
-                            <img src="https://res.cloudinary.com/lecroustillant/image/upload/v1651319977/image-le-croustillant%20/icons8-pleurs_znnf2i.gif" alt=""/>
+                        <div className="notFound"
+                        >
+                            <h1>
+                                Desolé! Nous n'avons pas trouvé de correspondance
+                            </h1>
+                            <img
+                                src="https://res.cloudinary.com/lecroustillant/image/upload/v1651319977/image-le-croustillant%20/icons8-pleurs_znnf2i.gif" alt=""/>
                         </div>
                     )}
 
         </div>
 
-        </div>
+        </>
     );
 };
 

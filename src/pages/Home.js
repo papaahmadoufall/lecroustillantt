@@ -5,6 +5,7 @@ import Header from '../components/Header';
 import ProductItem from "../components/ProductItem";
 import SliderComponent from "../components/SliderComponent";
 import SearchBar from "../components/SearchBar";
+import CartBtn from "../components/CartBtn";
 // import ProductShowItem from "./ProductShowItem";
 // import {Link, useNavigate} from "react-router-dom";
 
@@ -17,7 +18,6 @@ function Home() {
     let categoryArr = ['Best seller'], sliderArr = []
     const [filterArg, setFilterArg] = useState("Best seller")
     const [menuData, setMenuData] = useState([]);
-
     useEffect(() => {
         fetch('menu.json')
             .then(r => r.json())
@@ -26,7 +26,7 @@ function Home() {
                 console.log(menuData)
             })
     }, [])
-
+    const [cartCount, setCartCount] = useState(null);
     const categoryMap = () => {
         /*
             only add catégorie for button label
@@ -64,8 +64,11 @@ function Home() {
     return (
         <div className="App">
             <Header/>
+            <section className="wrap">
             <SearchBar data={menuData}/>
+                <CartBtn data={cartCount}/>
 
+            </section>
             <div className="container-body">
                 <div className="slider">
                     <SliderComponent  sliderArr = {sliderArr} />
@@ -110,10 +113,9 @@ function Home() {
                                     }} >
                                             <Fade left    >
                                     <ProductItem item={item}/>
-                                    </Fade>
 
+                                            </Fade>
                                     </div>
-
 
                                 )
                             }

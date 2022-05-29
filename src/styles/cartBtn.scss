@@ -1,0 +1,27 @@
+@import "config";
+div.cartBtn{
+  justify-content: center;
+  display: inline-flex;
+  flex-direction: column;
+  float: right;
+  align-items: center;
+
+  &>a{
+    background-color: $primary-color;
+    width: auto;
+    height: 20px;
+    border-radius: 20px;
+border: none;
+    color: white;
+padding:10px 10px ;
+  }
+  span.number{
+background-color: #282c34;
+    color: white;
+    border-radius: 100%;
+    padding: 3px 4px;
+    margin-top: -10px;
+    font-size: 0.9em;
+    font-weight: bold;
+  }
+}
